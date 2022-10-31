@@ -10,14 +10,14 @@ import SwiftUI
 struct RatingView: View {
     @Binding var rating: Int
 
-    var label = ""
+    var label = "My Rating:"
     var maximumRating = 5
 
-    var offImage: Image?
+    var offImage = Image(systemName: "star")
     var onImage = Image(systemName: "star.fill")
 
     var offColor = Color.gray
-    var onColor = Color.yellow
+    var onColor = Color.green
 
     var body: some View {
         HStack {
@@ -46,6 +46,6 @@ struct RatingView: View {
 
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingView(rating: .constant(4))
+        RatingView(rating: .constant(3))
     }
 }

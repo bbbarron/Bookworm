@@ -28,7 +28,7 @@ struct DetailView: View {
                     .foregroundColor(.white)
                     .background(.black.opacity(0.75))
                     .clipShape(Capsule())
-                    .offset(x: -5, y: -5)
+                    .offset(x: -10, y: -5)
             }
 
             Text(book.author ?? "Unknown Author")
@@ -65,4 +65,5 @@ struct DetailView: View {
         dismiss()
     }
 }
+
 
