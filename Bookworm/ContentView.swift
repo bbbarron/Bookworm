@@ -30,7 +30,10 @@ struct ContentView: View {
 
                             VStack(alignment: .leading) {
                                 Text(book.title ?? "Unknown Title")
+                                    // Following lines added to identify lousy books (challenge 2)
+                                    .foregroundColor(book.rating == 1 ? .red : .primary)
                                     .font(.headline)
+                                    .opacity(book.rating == 1 ? 0.5 : 1)
 
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(.secondary)
