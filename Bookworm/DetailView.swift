@@ -1,6 +1,6 @@
 //
 //  DetailView.swift
-//  Bookworm Project 11
+//  Bookworm Project 11 
 //
 //  Created by Barry Barron on 10/28/2022.
 //
